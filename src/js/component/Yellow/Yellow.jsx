@@ -4,7 +4,7 @@ import "../Yellow/Yellow.css";
 const YellowLight = () => {
 	return (
 		<>
-			<h1>Yellow</h1>
+			
 		</>
 	);
 };

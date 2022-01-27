@@ -6,7 +6,7 @@ const RedLight = () => {
 
 	return (
 		<>
-			<h1>Red</h1>
+			
 		</>
 	);
 };
