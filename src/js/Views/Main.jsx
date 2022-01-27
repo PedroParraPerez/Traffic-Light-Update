@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/index.css";
 
-import GreenLight from "../component/Green/Green.jsx";
+import Light from "../component/Light/Light.jsx";
 
 const Main = () => {
 	return (
@@ -11,17 +11,18 @@ const Main = () => {
 					<div className="col-md-12" id="semaforo">
 						<div className="row">
 							<div className="greenlight">
-								<GreenLight />
+								<Light />
 							</div>
 						</div>
 						<div className="row">
 							<div className="yellowlight">
-								<GreenLight id="red" />
+								<Light id="red" />
+								{/* No se cambia el color si le indico la id  */}
 							</div>
 						</div>
 						<div className="row">
 							<div className="yellowlight">
-								<GreenLight />
+								<Light />
 							</div>
 						</div>
 					</div>
