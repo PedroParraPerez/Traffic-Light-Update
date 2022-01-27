@@ -6,7 +6,7 @@ const GreenLight = (props) => {
 
 	return (
 		<>
-			<div className="green" id="color"></div>
+			<div className="green"></div>
 		</>
 	);
 };

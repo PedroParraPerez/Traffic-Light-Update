@@ -1,13 +1,16 @@
 
-
+body{
+    background-color: black;
+}
 #semaforo{
-    background-color: rgb(17, 61, 17);
+    background-color: white;
     width: 20rem;
     height: 50rem;
     margin: auto;
     margin-top: 10%;
     border-radius: 5rem;
 }
-.yellowligth{
+
+#yellow{
     background-color: yellow;
 }
