@@ -1,0 +1,14 @@
+.LightGlowTop{
+    
+    box-shadow: 0px 0px 50px 80px purple;
+    background-color: purple;
+}
+.fondo{
+   
+    width: 13rem;
+    height: 13rem;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 50%;
+    background-color: rgb(99, 27, 99);
+}
