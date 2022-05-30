@@ -1,19 +1,29 @@
-
-body{
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
     background-color: black;
 }
-#semaforo{
-    background-color: white;
+
+.traffic-ligth{
     width: 20rem;
-    height: 50rem;
+    height: 42rem;
     margin: auto;
-    margin-top: 5%;
-    border-radius: 5rem;
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 2rem;
 }
-.LightGlow{
-    
-    box-shadow: 0px 0px 50px 80px purple;
-    background-color: rgb(61, 9, 61);
-
+.ligth{
+    width: 12rem;
+    height: 12rem;
+    margin: auto;
+   margin-top: 1rem;
+    border-radius: 50%;
+    background-color: black;
+    border: solid purple 1px;
 }
-
+.glow{
+    background-color: purple;
+    box-shadow: 0px 0px 50px 40px purple;
+}

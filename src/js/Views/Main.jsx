@@ -1,32 +1,46 @@
 import React, { useState } from "react";
 import "../../styles/index.css";
-import "../component/Light.css";
-
-import Light from "../component/Light.jsx";
 
 const Main = () => {
+	const [on, setOn] = useState({
+		top: false,
+		middle: false,
+		botton: false,
+	});
 	return (
 		<>
-			<div className="container-fluid">
-				<div className="row">
-					<div className="col-md-12" id="semaforo">
-						<div className="row">
-							<div id="top">
-								<Light />
-							</div>
-						</div>
-						<div className="row">
-							<div id="middle">
-								<Light />
-							</div>
-						</div>
-						<div id="bottom">
-							<div>
-								<Light />
-							</div>
-						</div>
-					</div>
-				</div>
+			<div className="traffic-ligth">
+				<div
+					className={`ligth ${on.top === true ? "glow" : ""}`}
+					onClick={() => {
+						setOn({
+							top: true,
+							middle: false,
+							botton: false,
+						});
+					}}></div>
+				<div
+					onClick={() => {
+						setOn({
+							top: false,
+							middle: true,
+							botton: false,
+						});
+					}}
+					className={`ligth ${
+						on.middle === true ? "glow" : ""
+					}`}></div>
+				<div
+					onClick={() => {
+						setOn({
+							top: false,
+							middle: false,
+							botton: true,
+						});
+					}}
+					className={`ligth ${
+						on.botton === true ? "glow" : ""
+					}`}></div>
 			</div>
 		</>
 	);
